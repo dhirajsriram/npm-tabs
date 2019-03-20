@@ -20,9 +20,27 @@ An autocompletion shell script that autocoplete the commands based on the script
 ![alt text](/Npm-autocompletion.PNG)
 
 ## Snippets
-```sh
+
+### Get the npm script names as an array
+```console
 sample=`cat package.json`
 arr=()
 arr=($(echo "${sample}" | jq -r ' .scripts |keys | join(" ")'))
 ```
+### Autocomplete based on the array
+```console
+_UseGetOpt-2 ()
+{
+  local cur
+  cur=${COMP_WORDS[COMP_CWORD]}
+  COMPREPLY=( $( compgen -W '${arr[*]}' $cur))
+  case "$cur" in
+    -*)
+    COMPREPLY=( $( compgen -W '-a -d -f -l -t -h --aoption --debug \
+                               --file --log --test --help --' -- $cur ) );
+  esac
+  return 0
+}
 
+complete -F _UseGetOpt-2 -o filenames npm run
+```
