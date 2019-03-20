@@ -19,3 +19,10 @@ An autocompletion shell script that autocoplete the commands based on the script
 
 ![alt text](/Npm-autocompletion.PNG)
 
+## Snippets
+```sh
+sample=`cat package.json`
+arr=()
+arr=($(echo "${sample}" | jq -r ' .scripts |keys | join(" ")'))
+```
+
