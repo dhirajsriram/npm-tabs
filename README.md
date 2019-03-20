@@ -17,5 +17,5 @@ An autocompletion shell script that autocoplete the commands based on the script
 ```
 ## Example
 
-![alt text](/Capture.PNG)
+![alt text](/Npm-autocompletion.PNG)
 
