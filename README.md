@@ -22,13 +22,13 @@ An autocompletion shell script that autocoplete the commands based on the script
 ## Snippets
 
 ### Get the npm script names as an array
-```console
+``` sh
 sample=`cat package.json`
 arr=()
 arr=($(echo "${sample}" | jq -r ' .scripts |keys | join(" ")'))
 ```
 ### Autocomplete based on the array
-```console
+``` sh
 _UseGetOpt-2 ()
 {
   local cur
