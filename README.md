@@ -15,5 +15,5 @@ An autocompletion shell script that autocoplete the commands based on the script
 - Now while typing npm run (default command to run npm scripts) press tab to show the list of suggested commands
 ```
 ## Example
-![alt text](./Npm autocompletion.png)
+![alt text](/Npm autocompletion.png)
 
