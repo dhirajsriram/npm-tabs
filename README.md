@@ -14,4 +14,6 @@ An autocompletion shell script that autocoplete the commands based on the script
 - Run command Source npm-tabs.sh on the root directory
 - Now while typing npm run (default command to run npm scripts) press tab to show the list of suggested commands
 ```
+## Example
+![alt text](./Npm autocompletion.png)
 
