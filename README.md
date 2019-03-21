@@ -11,6 +11,7 @@ An autocompletion shell script that autocoplete the commands based on the script
 
 - Place the npm-tabs.sh file in the root directory alongside package.json
 - Install Jq either using brew (Mac) or chocolatey (Windows) or by apt-get
+- Run the command
 ```
 source npm-tabs.sh
 ```
