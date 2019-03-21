@@ -1,4 +1,4 @@
-#'brew install jq'
+#'brew install jq' Installation for mac // Uncomment the first time
 sample=`cat package.json`
 arr=()
 arr=($(echo "${sample}" | jq -r ' .scripts |keys | join(" ")'))
