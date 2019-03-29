@@ -7,9 +7,10 @@ else
     echo -e "${RED}No jq dependency found , Installing...${NC}"
     brew install jq
 fi
-sample=`cat package.json`
+sample=`cat ../../package.json`
 arr=()
 arr=($(echo "${sample}" | jq -r ' .scripts |keys | join(" ")'))
+echo -e "${RED}${arr[*]}${NC} are the identified commands"
 _UseGetOpt-2 ()
 {
   local cur
@@ -18,11 +19,11 @@ _UseGetOpt-2 ()
   case "$cur" in
     -*)
     COMPREPLY=( $( compgen -W '-a -d -f -l -t -h --aoption --debug \
-                               --file --log --test --help --' -- $cur ) );
+                               --file --log --test --help --' --$cur ) );
   esac
   
   return 0
 }
 
-complete -F _UseGetOpt-2 -o filenames npm run
+complete -F _UseGetOpt-2 filenames npm run
 echo -e "${GREEN}✔ Automcomplete embedded to terminal. Try 'npm run ' and tab to start${NC}" 

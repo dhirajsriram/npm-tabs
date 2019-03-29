@@ -19,6 +19,7 @@ cd node_modules/npm-tabs
 source npm-tabs.sh
 ```
 
+- This will automatically look for the necessary dependencies and will install them is necessary
 - Now while typing npm run (default command to run npm scripts) press tab to show the list of suggested commands
 
 ## Example
