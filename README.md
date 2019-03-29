@@ -15,7 +15,7 @@ cd node_modules/npm-tabs ; source npm-tabs.sh
 ````
 *If it says 'source' is not recognized as an internal or external command. Try running the command from a bash terminal*
 
-cygWin - https://www.cygwin.com/
+cygWin - https://www.cygwin.com/<br/>
 git -  https://git-scm.com/download/win
 
 - Now while typing npm run (default command to run npm scripts) press tab to show the list of suggested commands
