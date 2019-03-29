@@ -39,7 +39,7 @@ if hash jq>/dev/null; then
     echo -e "${GREEN}✔️ jq dependency found${NC}" 
     _ReadFile
 else
-    brew -h
+    which brew;
     if [[ $? != 0 ]] ; then
         case $machine in
         MinGw)
@@ -52,9 +52,14 @@ else
             echo -e "${RED}! No jq dependency found , Installing...${NC}"
             /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
             brew install jq
+            echo -e "${GREEN}✔️ jq dependency installed${NC}"
             _ReadFile
             ;;
         esac
+    else
+        brew install jq
+        echo -e "${GREEN}✔️ jq dependency installed${NC}"
+        _ReadFile 
     fi
 fi
 
