@@ -9,17 +9,15 @@ An autocompletion shell script that autocompletes the commands based on the scri
 
 ## Installation
 
-- After installing the package , naviagate to the folder under node_modules
+- After installing the package , use the following command in the root folder of your application
 ```
 cd node_modules/npm-tabs ; source npm-tabs.sh
 ````
-- Once inside the folder execute the below command from a bash terminal
+*If it says 'source' is not recognized as an internal or external command. Try running the command from a bash terminal*
 
-```
-source npm-tabs.sh
-```
+cygWin - https://www.cygwin.com/
+git -  https://git-scm.com/download/win
 
-- This will automatically look for the necessary dependencies and will install them is necessary
 - Now while typing npm run (default command to run npm scripts) press tab to show the list of suggested commands
 
 ## Example
