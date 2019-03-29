@@ -24,7 +24,9 @@ git -  https://git-scm.com/download/win
 
 ## Example
 
-![alt text](https://github.com/dhirajsriram/npm-tabs/blob/master/npmtabs.PNG?raw=true)
+<p align="center">
+  <img src="https://github.com/dhirajsriram/npm-tabs/blob/master/npmtabs.PNG?raw=true">
+</p>
 
 ## Snippets
 
