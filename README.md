@@ -24,7 +24,7 @@ source npm-tabs.sh
 
 ## Example
 
-![alt text](/Npm-autocompletion.PNG)
+![alt text](https://github.com/dhirajsriram/npm-tabs/blob/master/npmtabs.PNG?raw=true)
 
 ## Snippets
 
