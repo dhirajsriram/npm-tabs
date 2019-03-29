@@ -18,7 +18,6 @@ _ReadFile()
     echo -e "${RED}${arr[*]}${NC} are the identified commands"
     complete -F _UseGetOpt-2 filenames npm run
     echo -e "${GREEN}✔️ Automcomplete embedded to terminal. Try 'npm run ' and tab to start${NC}" 
-    cd ../..
 }
 
 _UseGetOpt-2 ()
