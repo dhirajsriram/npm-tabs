@@ -11,7 +11,7 @@ An autocompletion shell script that autocompletes the commands based on the scri
 
 - After installing the package , naviagate to the folder under node_modules
 ```
-cd node_modules/npm-tabs
+cd node_modules/npm-tabs ; source npm-tabs.sh
 ````
 - Once inside the folder execute the below command from a bash terminal
 
