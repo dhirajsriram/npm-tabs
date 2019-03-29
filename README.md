@@ -1,6 +1,6 @@
 # NPM-Tabs
 
-An autocompletion shell script that autocoplete the commands based on the scripts declared in the package.json file.
+An autocompletion shell script that autocompletes the commands based on the scripts declared in the package.json file.
 
 ## Requirement
 
@@ -9,12 +9,16 @@ An autocompletion shell script that autocoplete the commands based on the script
 
 ## Installation
 
-- Place the npm-tabs.sh file in the root directory alongside package.json
-- Install Jq either using brew (Mac) or chocolatey (Windows) or by apt-get
-- Run the command
+- After installing the package , naviagate to the folder under node_modules
+```
+cd node_modules/npm-tabs
+````
+- Once inside the folder execute the below command from a bash terminal
+
 ```
 source npm-tabs.sh
 ```
+
 - Now while typing npm run (default command to run npm scripts) press tab to show the list of suggested commands
 
 ## Example
