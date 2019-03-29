@@ -27,3 +27,4 @@ _UseGetOpt-2 ()
 
 complete -F _UseGetOpt-2 filenames npm run
 echo -e "${GREEN}✔ Automcomplete embedded to terminal. Try 'npm run ' and tab to start${NC}" 
+cd ../..
