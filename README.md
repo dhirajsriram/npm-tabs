@@ -2,7 +2,7 @@
 
 An autocompletion shell script that autocompletes the commands based on the scripts declared in the package.json file.
 
-## Requirements
+## Dependencies required
 
 - Jq
 - Terminal that runs shell script (Support for windows under development)
@@ -14,6 +14,7 @@ An autocompletion shell script that autocompletes the commands based on the scri
 ```
 cd node_modules/npm-tabs ; source npm-tabs.sh
 ````
+- It should automatically install the necessary dependencies
 
 *If it says 'source' is not recognized as an internal or external command. Try running the command from a bash terminal*
 
@@ -21,12 +22,6 @@ cygWin - https://www.cygwin.com/<br/>
 git -  https://git-scm.com/download/win
 
 - Now while typing npm run (default command to run npm scripts) press tab to show the list of suggested commands
-
-## Example
-
-<p align="center">
-  <img src="https://github.com/dhirajsriram/npm-tabs/blob/master/npmtabs.PNG?raw=true">
-</p>
 
 ## Snippets
 
@@ -37,6 +32,7 @@ arr=()
 arr=($(echo "${sample}" | jq -r ' .scripts |keys | join(" ")'))
 ```
 ### Autocomplete based on the array
+
 ``` sh
 _UseGetOpt-2 ()
 {
@@ -53,3 +49,9 @@ _UseGetOpt-2 ()
 
 complete -F _UseGetOpt-2 -o filenames npm run
 ```
+
+## Output
+
+<p align="center">
+  <img src="https://github.com/dhirajsriram/npm-tabs/blob/master/npmtabs.PNG?raw=true">
+</p>
