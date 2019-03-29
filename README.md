@@ -7,7 +7,7 @@ An autocompletion shell script that autocompletes the commands based on the scri
 - Jq
 - Terminal that runs shell script (Support for windows under development)
 
-## Installation
+## Running
 
 - After installing the package , use the following command in the root folder of your application
 ```
