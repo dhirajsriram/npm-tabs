@@ -1,4 +1,4 @@
-# NPM-Tabs
+# npm-tabs
 
 An autocompletion shell script that autocompletes the commands based on the scripts declared in the package.json file.
 
