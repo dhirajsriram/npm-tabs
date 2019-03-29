@@ -2,7 +2,7 @@
 
 An autocompletion shell script that autocompletes the commands based on the scripts declared in the package.json file.
 
-## Requirement
+## Requirements
 
 - Jq
 - Terminal that runs shell script (Support for windows under development)
@@ -10,9 +10,11 @@ An autocompletion shell script that autocompletes the commands based on the scri
 ## Running
 
 - After installing the package , use the following command in the root folder of your application
+
 ```
 cd node_modules/npm-tabs ; source npm-tabs.sh
 ````
+
 *If it says 'source' is not recognized as an internal or external command. Try running the command from a bash terminal*
 
 cygWin - https://www.cygwin.com/<br/>
