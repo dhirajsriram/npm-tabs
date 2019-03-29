@@ -1,15 +1,15 @@
 {
   "name": "npm-tabs",
   "version": "1.0.0",
-  "description": "Tabbable npm scripts",
-  "main": "index.js",
+  "description": "Tabbable npm run scripts",
+  "main": "npm-tabs.sh",
   "scripts": {
-    "serve": "source npm-tabs.sh",
+    "start": "source npm-tabs.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhirajsriram/Npm-tabs.git"
+    "url": "https://github.com/dhirajsriram/Npm-tabs.git"
   },
   "author": "Dhiraj Sriram",
   "license": "ISC",
