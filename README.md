@@ -1,30 +1,32 @@
-# NPM-Tabs
+# npm-tabs
 
 An autocompletion shell script that autocompletes the commands based on the scripts declared in the package.json file.
 
-## Requirement
+## Requirements
 
 - Jq
 - Terminal that runs shell script (Support for windows under development)
 
-## Installation
+## Running
 
-- After installing the package , naviagate to the folder under node_modules
+- After installing the package , use the following command in the root folder of your application
+
 ```
 cd node_modules/npm-tabs ; source npm-tabs.sh
 ````
-- Once inside the folder execute the below command from a bash terminal
 
-```
-source npm-tabs.sh
-```
+*If it says 'source' is not recognized as an internal or external command. Try running the command from a bash terminal*
 
-- This will automatically look for the necessary dependencies and will install them is necessary
+cygWin - https://www.cygwin.com/<br/>
+git -  https://git-scm.com/download/win
+
 - Now while typing npm run (default command to run npm scripts) press tab to show the list of suggested commands
 
 ## Example
 
-![alt text](/Npm-autocompletion.PNG)
+<p align="center">
+  <img src="https://github.com/dhirajsriram/npm-tabs/blob/master/npmtabs.PNG?raw=true">
+</p>
 
 ## Snippets
 
