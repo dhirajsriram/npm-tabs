@@ -12,7 +12,7 @@ An autocompletion shell script that autocompletes the commands based on the scri
 - After installing the package , use the following command in the root folder of your application
 
 ```
-cd node_modules/npm-tabs ; source npm-tabs.sh
+cd node_modules/npm-tabs ; tr -cd '[:alnum:][:blank:][:punct:]\n' < npm-tabs.sh > npm-tabs-min.sh ; source npm-tabs-min.sh
 ````
 - It should automatically install the necessary dependencies
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
@@ -18,6 +19,7 @@ _ReadFile()
     echo -e "${RED}${arr[*]}${NC} are the identified commands"
     complete -F _UseGetOpt-2 filenames npm run
     echo -e "${GREEN}✔️ Automcomplete embedded to terminal. Try 'npm run ' and tab to start${NC}" 
+    cd ../..
 }
 
 _UseGetOpt-2 ()
