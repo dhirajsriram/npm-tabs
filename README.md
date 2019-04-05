@@ -1,7 +1,7 @@
 # npm-tabs
 
 An autocompletion shell script that autocompletes the commands based on the scripts declared in the package.json file.
-[![NPM](https://img.shields.io/npm/v/react-searchbar.svg)](https://www.npmjs.com/package/npm-tabs)
+[![NPM](https://img.shields.io/npm/v/npm-tabs.svg)](https://www.npmjs.com/package/npm-tabs)
 
 ## Dependencies required
 
